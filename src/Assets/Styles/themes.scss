@@ -1,0 +1,50 @@
+// 主色调
+$--primary-color: #1890ff !default;
+// 主色调-亮色
+$--color-light: lighten($--primary-color, 10%) !default;
+// 主色调-暗色
+$--color-dark: darken($--primary-color, 10%) !default;
+
+/** 辅助色 **/
+// info 色调
+$--color-info: #1890ff !default;
+// success 色调
+$--color-success: #19be6b !default;
+// warning 色调
+$--color-warning: #faad14 !default;
+// error 色调
+$--color-error: #f5222d !default;
+
+/** 中性色 **/
+$--color-black: #1f2d3d !default;
+$--color-black-light: #324057 !default;
+$--color-black-light-extra: #475669 !default;
+
+$--color-silver: #8492a6 !default;
+$--color-silver-light: #99a9bf !default;
+$--color-silver-light-extra: #c0ccda !default;
+
+$--color-gray: #d3dce6 !default;
+$--color-gray-light: #e5e9f2 !default;
+$--color-gray-light-extra: #eff2f7 !default;
+
+$--color-white: #ffffff !default;
+$--color-white-dark: #f9fafc !default;
+
+// base
+$--font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+$--placeholder-color: #bfbfbf;
+$--font-size-base: 14px;
+$--line-height-base: 1;
+$--text-color: #333;
+$--text-color-dark: rgba(0, 0, 0, 0.65);
+
+// links
+$--link-color: $--primary-color !default;
+$--link-hover-color: lighten($--link-color, 10%) !default;
+$--link-active-color: darken($--link-color, 10%) !default;
+
+// Disabled states
+$--disabled-color: rgba(0, 0, 0, 0.25);
+$--disabled-bg: #f5f5f5;
+$--disabled-color-dark: #d9d9d9;
