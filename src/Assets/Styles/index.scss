@@ -1,6 +1,18 @@
 @import "./themes.scss";
 
-body {
-    font-size: $--font-size-base;
-    font-family: $--font-family;
+.transition-wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+
+    &.transition-mode-both {
+        .transition-appear-active,
+        .transition-leave-active {
+            position: absolute;
+            width: 100%;
+            top: 0;
+        }
+    }
 }

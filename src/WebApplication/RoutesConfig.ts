@@ -1,6 +1,8 @@
 import { RouteConfig } from "react-router-config";
 import AuthorizedRoute from "@/Components/AuthorizedRoute";
 import LoadComponent from "@/Components/LoadComponent";
+import SystemLayout from "@/Layouts/SystemLayout";
+import UserLayout from "@/Layouts/UserLayout";
 
 export const RedirectPath = "/user/login";
 
@@ -49,20 +51,20 @@ export const RootRoutesConfig: RouteConfig[] = [
     {
         path: "/",
         title: "运营后台",
-        component: LoadComponent(() => import(/* webpackChunkName: "system" */ "@/Layouts/SystemLayout")),
+        component: SystemLayout,
         exact: true,
         route: AuthorizedRoute
     },
     {
         path: "/user",
         title: "用户管理",
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Layouts/UserLayout")),
+        component: UserLayout,
         routes: UserRoutesConfig
     },
     {
         path: "/",
         title: "运营后台",
-        component: LoadComponent(() => import(/* webpackChunkName: "system" */ "@/Layouts/SystemLayout")),
+        component: SystemLayout,
         route: AuthorizedRoute
     }
 ];

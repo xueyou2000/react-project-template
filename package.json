@@ -14,7 +14,7 @@
     "scripts": {
         "set-webpack-env": "cross-env TS_NODE_PROJECT=\"tsconfigwebpack.json\"",
         "dev": "yarn run set-webpack-env cross-env WEBPACK_ENV=dev cross-env webpack-dev-server",
-        "build-pro": "yarn run set-webpack-env cross-env WEBPACK_ENV=prod webpack --hide-modules --display none"
+        "build-pro": "yarn run set-webpack-env cross-env WEBPACK_ENV=prod webpack"
     },
     "devDependencies": {
         "@types/case-sensitive-paths-webpack-plugin": "^2.1.2",
@@ -89,6 +89,7 @@
         "xy-form": "^0.0.96",
         "xy-grid": "^0.0.6",
         "xy-input": "^0.0.91",
-        "xy-page-transition": "^0.0.2"
+        "xy-page-transition": "^0.0.2",
+        "xy-skeleton": "^0.0.5"
     }
 }

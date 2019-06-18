@@ -8498,7 +8498,7 @@ xy-form@^0.0.96:
     validate-provider "^1.0.33"
     validate-runner "^1.0.22"
 
-xy-grid@^0.0.6:
+xy-grid@0.0.6, xy-grid@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npm.taobao.org/xy-grid/download/xy-grid-0.0.6.tgz#064f630d4f2f75af3dd6a8036531f0a34e748f63"
   integrity sha1-Bk9jDU8vda891qgDZTHwo050j2M=
@@ -8529,6 +8529,16 @@ xy-page-transition@^0.0.2:
     classnames "^2.2.6"
     react "^16.8.2"
     react-dom "^16.8.2"
+
+xy-skeleton@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/xy-skeleton/download/xy-skeleton-0.0.5.tgz#742f0419c9c55debb2a8dee005223b132da2b1f8"
+  integrity sha1-dC8EGcnFXeuyqN7gBSI7Ey2isfg=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    xy-grid "0.0.6"
 
 y18n@^3.2.1:
   version "3.2.1"

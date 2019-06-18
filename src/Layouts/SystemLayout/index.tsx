@@ -1,4 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./index.scss";
+import { RedirectPath } from "@/WebApplication/RoutesConfig";
 
 function SystemLayout() {
     return (
@@ -11,6 +14,8 @@ function SystemLayout() {
                 <a href="#">菜单4</a>
                 <a href="#">菜单5</a>
             </ul>
+
+            <Link to={RedirectPath}>回去登录</Link>
 
             <div>页面xxxxxxxxxxxxxxx</div>
         </div>

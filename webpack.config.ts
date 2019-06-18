@@ -89,7 +89,24 @@ export default () => {
         optimization: {
             removeEmptyChunks: true,
             removeAvailableModules: true,
-            minimize: env === WebpackBuildEnvironmentEnum.prod
+            minimize: env === WebpackBuildEnvironmentEnum.prod,
+            splitChunks: {
+                cacheGroups: {
+                    components: {
+                        test: /(xy-(\w+)|utils-|validate-)/,
+                        name: "components",
+                        chunks: "all",
+                        enforce: true,
+                        priority: 1
+                    },
+                    vendors: {
+                        test: /[\\/]node_modules[\\/]/,
+                        name: "vendors",
+                        chunks: "all",
+                        priority: -10
+                    }
+                }
+            }
         },
         plugins: GetPlugins(config, devMode)
     };

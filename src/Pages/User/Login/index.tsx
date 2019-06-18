@@ -40,6 +40,9 @@ function UserLogin() {
                     <Link to={ForgetPasswordtPath} className="fr">
                         忘记密码?
                     </Link>
+                    <Link to="/" className="fr">
+                        跳转
+                    </Link>
                 </div>
             </div>
         </div>

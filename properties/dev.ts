@@ -49,28 +49,6 @@ const config: Configuration = {
                 changeHost: true
             });
         }
-        // proxy: [
-        //     {
-        //         target: "http://192.168.1.12:9001",
-        //         context: [`/gateway/**`]
-        //     },
-        //     {
-        //         target: "http://192.168.1.12:2002",
-        //         context: [`/boss/**`]
-        //     },
-        //     {
-        //         target: "http://192.168.1.12:6005",
-        //         context: [`/boss-server/**`]
-        //     },
-        //     {
-        //         target: "http://192.168.1.12:6014",
-        //         context: [`/ticket/**`]
-        //     },
-        //     {
-        //         target: "http://192.168.1.12:8080",
-        //         context: [`/chat/**`]
-        //     }
-        // ]
     }
 };
 

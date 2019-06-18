@@ -1,5 +1,10 @@
 @import "./themes.scss";
 
+body {
+    font-size: $--font-size-base;
+    font-family: $--font-family;
+}
+
 // remove the clear button of a text input control in IE10+
 input::-ms-clear,
 input::-ms-reveal {

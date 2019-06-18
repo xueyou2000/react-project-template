@@ -1,8 +1,72 @@
 $page-max-width: 1200px;
-
 .user-page {
     min-width: $page-max-width;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+
+    // &.transition-appear {
+    //     opacity: 0;
+    //     transform: translate3d(100%, 0, 0);
+    // }
+
+    &.transition-appear.transition-appear-active {
+        animation-name: bounceInLeft;
+    }
+
+    // &.transition-leave {
+    //     opacity: 1;
+    //     transform: translate3d(0, 0, 0);
+    // }
+
+    &.transition-leave.transition-leave-active {
+        animation-name: bounceOutLeft;
+    }
 }
+
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.05, 0.55, 0.36, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-2px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceOutLeft {
+    5% {
+        opacity: 1;
+        transform: translate3d(2px, 0, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
 .user-page_hd {
     max-width: $page-max-width;
     margin: auto;
