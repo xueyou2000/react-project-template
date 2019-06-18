@@ -40,6 +40,10 @@ const config: Configuration = {
         quiet: true,
         openPage: "index.html",
         contentBase: path.join(__dirname, ".."),
+        historyApiFallback: {
+            index: "/",
+            verbose: true
+        },
         before(app) {
             apiMocker(app, path.resolve(__dirname, "../mocker/index.js"), {
                 changeHost: true

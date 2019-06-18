@@ -1,0 +1,30 @@
+// 清除浮动
+.fix {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+        box-sizing: border-box;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+// 文本居中
+.tc {
+    text-align: center;
+}
+
+.c_green {
+    color: #1aad19;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

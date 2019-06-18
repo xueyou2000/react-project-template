@@ -8,8 +8,8 @@ export interface ApplicationRootProps extends RouteComponentProps {
     routes?: RouteConfig[];
 }
 
-function ApplicationRoot({ routes, location }: ApplicationRootProps) {
-    const applicationRef = useRef(new Application());
+function ApplicationRoot({ routes, location, history }: ApplicationRootProps) {
+    const applicationRef = useRef(new Application(history));
 
     useEffect(() => {
         applicationRef.current.onRouterChange(location.pathname);

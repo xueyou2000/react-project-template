@@ -59,7 +59,11 @@ export default class Application {
         // todo #1: 获取当前路由配置
         // 生成面包屑
         this._breadcrumb = matchRoutes(RootRoutesConfig, path);
-        // 更新文档标题
-        window.document.title = null;
+        if (this._breadcrumb.length > 0) {
+            // 获取当前页面配置
+            const config = this._breadcrumb[this._breadcrumb.length - 1].route;
+            // 更新文档标题
+            window.document.title = config.title;
+        }
     }
 }

@@ -146,6 +146,40 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@fortawesome/fontawesome-common-types@^0.2.19":
+  version "0.2.19"
+  resolved "https://registry.npm.taobao.org/@fortawesome/fontawesome-common-types/download/@fortawesome/fontawesome-common-types-0.2.19.tgz#754a0f85e1290858152e1c05700ab502b11197f1"
+  integrity sha1-dUoPheEpCFgVLhwFcAq1ArERl/E=
+
+"@fortawesome/fontawesome-svg-core@^1.2.17":
+  version "1.2.19"
+  resolved "https://registry.npm.taobao.org/@fortawesome/fontawesome-svg-core/download/@fortawesome/fontawesome-svg-core-1.2.19.tgz#0eca1ce9285c3d99e6e340633ee8f615f9d1a2e0"
+  integrity sha1-Dsoc6ShcPZnm40BjPuj2FfnRouA=
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.19"
+
+"@fortawesome/free-regular-svg-icons@^5.9.0":
+  version "5.9.0"
+  resolved "https://registry.npm.taobao.org/@fortawesome/free-regular-svg-icons/download/@fortawesome/free-regular-svg-icons-5.9.0.tgz#b16b325bdcdf51abebc547313cb75c3ef722ca04"
+  integrity sha1-sWsyW9zfUavrxUcxPLdcPvciygQ=
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.19"
+
+"@fortawesome/free-solid-svg-icons@^5.8.1", "@fortawesome/free-solid-svg-icons@^5.9.0":
+  version "5.9.0"
+  resolved "https://registry.npm.taobao.org/@fortawesome/free-solid-svg-icons/download/@fortawesome/free-solid-svg-icons-5.9.0.tgz#1c73e7bac17417d23f934d83f7fff5b100a7fda9"
+  integrity sha1-HHPnusF0F9I/k02D9//1sQCn/ak=
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.19"
+
+"@fortawesome/react-fontawesome@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.npm.taobao.org/@fortawesome/react-fontawesome/download/@fortawesome/react-fontawesome-0.1.4.tgz#18d61d9b583ca289a61aa7dccc05bd164d6bc9ad"
+  integrity sha1-GNYdm1g8oommGqfczAW9Fk1rya0=
+  dependencies:
+    humps "^2.0.1"
+    prop-types "^15.5.10"
+
 "@jest/console@^24.7.1":
   version "24.7.1"
   resolved "https://registry.npm.taobao.org/@jest/console/download/@jest/console-24.7.1.tgz#32a9e42535a97aedfe037e725bd67e954b459545"
@@ -3702,6 +3736,11 @@ https-browserify@^1.0.0:
   resolved "https://registry.npm.taobao.org/https-browserify/download/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
+humps@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npm.taobao.org/humps/download/humps-2.0.1.tgz#dd02ea6081bd0568dc5d073184463957ba9ef9aa"
+  integrity sha1-3QLqYIG9BWjcXQcxhEY5V7qe+ao=
+
 iconv-lite@0.4.24, iconv-lite@^0.4.4:
   version "0.4.24"
   resolved "https://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -6371,7 +6410,7 @@ prompts@^2.0.1:
     kleur "^3.0.2"
     sisteransi "^1.0.0"
 
-prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -8011,6 +8050,16 @@ utila@^0.4.0, utila@~0.4:
   resolved "https://registry.npm.taobao.org/utila/download/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
   integrity sha1-ihagXURWV6Oupe7MWxKk+lN5dyw=
 
+utils-hooks@0.0.69:
+  version "0.0.69"
+  resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.69.tgz#b711fb1aaea7056f3ad662db5e71cfd034ca71af"
+  integrity sha1-txH7Gq6nBW861mLbXnHP0DTKca8=
+
+utils-hooks@0.0.71:
+  version "0.0.71"
+  resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.71.tgz#d26d8fb6d2a5bffebc50fa7f190b85d195759706"
+  integrity sha1-0m2PttKlv/68UPp/GQuF0ZV1lwY=
+
 utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
@@ -8026,6 +8075,11 @@ v8-compile-cache@^2.0.2:
   resolved "https://registry.npm.taobao.org/v8-compile-cache/download/v8-compile-cache-2.0.3.tgz#00f7494d2ae2b688cfe2899df6ed2c54bef91dbe"
   integrity sha1-APdJTSritojP4omd9u0sVL75Hb4=
 
+validate-methods@^1.0.51, validate-methods@^1.0.53:
+  version "1.0.53"
+  resolved "https://registry.npm.taobao.org/validate-methods/download/validate-methods-1.0.53.tgz#4c8a43ca90128835c52abad6b56574d9ac6bd76a"
+  integrity sha1-TIpDypASiDXFKrrWtWV02axr12o=
+
 validate-npm-package-license@^3.0.1:
   version "3.0.4"
   resolved "https://registry.npm.taobao.org/validate-npm-package-license/download/validate-npm-package-license-3.0.4.tgz#fc91f6b9c7ba15c857f4cb2c5defeec39d4f410a"
@@ -8033,6 +8087,19 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validate-provider@^1.0.31, validate-provider@^1.0.33:
+  version "1.0.33"
+  resolved "https://registry.npm.taobao.org/validate-provider/download/validate-provider-1.0.33.tgz#a30a52b1051cf88846d8522cbdd10055e020df46"
+  integrity sha1-owpSsQUc+IhG2FIsvdEAVeAg30Y=
+
+validate-runner@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.npm.taobao.org/validate-runner/download/validate-runner-1.0.22.tgz#b172e1842584238a5dc5535c95cd5be5c009e615"
+  integrity sha1-sXLhhCWEI4pdxVNclc1b5cAJ5hU=
+  dependencies:
+    validate-methods "^1.0.51"
+    validate-provider "^1.0.31"
 
 value-equal@^0.4.0:
   version "0.4.0"
@@ -8405,6 +8472,54 @@ xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.npm.taobao.org/xtend/download/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
+
+xy-button@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npm.taobao.org/xy-button/download/xy-button-1.0.2.tgz#292fd3b9784d0b81a4071e36a2e8626e7dbb8d6d"
+  integrity sha1-KS/TuXhNC4GkBx42ouhibn27jW0=
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.17"
+    "@fortawesome/free-solid-svg-icons" "^5.8.1"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+
+xy-form@^0.0.96:
+  version "0.0.96"
+  resolved "https://registry.npm.taobao.org/xy-form/download/xy-form-0.0.96.tgz#fa4a65d0eee1c17f7e2da40a1c49913f50b8f244"
+  integrity sha1-+kpl0O7hwX9+LaQKHEmRP1C48kQ=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.71"
+    validate-methods "^1.0.53"
+    validate-provider "^1.0.33"
+    validate-runner "^1.0.22"
+
+xy-grid@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.npm.taobao.org/xy-grid/download/xy-grid-0.0.6.tgz#064f630d4f2f75af3dd6a8036531f0a34e748f63"
+  integrity sha1-Bk9jDU8vda891qgDZTHwo050j2M=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.69"
+
+xy-input@^0.0.91:
+  version "0.0.91"
+  resolved "https://registry.npm.taobao.org/xy-input/download/xy-input-0.0.91.tgz#1db4db3020c34ec806c54829528326b9e362e31b"
+  integrity sha1-HbTbMCDDTsgGxUgpUoMmueNi4xs=
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.17"
+    "@fortawesome/free-solid-svg-icons" "^5.8.1"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.69"
 
 xy-page-transition@^0.0.2:
   version "0.0.2"

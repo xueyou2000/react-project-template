@@ -1,0 +1,87 @@
+$page-max-width: 1200px;
+
+.user-page {
+    min-width: $page-max-width;
+}
+.user-page_hd {
+    max-width: $page-max-width;
+    margin: auto;
+    height: 75px;
+    line-height: 75px;
+    overflow: hidden;
+}
+.user-page_hd_nav {
+    zoom: 1;
+
+    .logo {
+        margin: 10px 0;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    .separation-line {
+        display: inline-block;
+        width: 1px;
+        height: 54px;
+        background-color: #d6d6d6;
+        margin: 10px 13px 10px 10px;
+    }
+
+    .desc {
+        font-family: GBHerSin-Medium;
+        font-size: 24px;
+        letter-spacing: -1px;
+        color: #999999;
+        display: inline-block;
+        display: inline-block;
+        margin: auto;
+        vertical-align: top;
+    }
+}
+
+.user-page_bd {
+    min-width: $page-max-width;
+    margin: auto;
+    background-color: #73bef0;
+    height: 723px;
+    background-image: url(~@/Assets/Images/login_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 0.1px;
+}
+.user-page_hd_offset {
+    width: 1200px;
+    margin: auto;
+}
+.landing-plane {
+    margin-top: 190px;
+    margin-left: 750px;
+
+    .landing-paper {
+        width: 450px;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+    }
+    .landing-inner {
+        min-height: 370px;
+        background-color: #fff;
+        padding: 30px 40px;
+        box-sizing: border-box;
+    }
+}
+.user-page-footer {
+    background-color: #2d3237;
+    min-width: $page-max-width;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    line-height: 30px;
+    color: #8b8d90;
+    padding: 27px 0;
+
+    p {
+        margin-bottom: 0;
+    }
+}

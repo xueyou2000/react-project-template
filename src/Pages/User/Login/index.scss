@@ -1,0 +1,47 @@
+.landing-title {
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #1a8fff;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+.login-inner {
+    padding: 0 30px;
+
+    .xy-input {
+        padding: 6px 11px;
+        height: 40px;
+        font-size: 16px;
+        padding-left: 36px;
+    }
+
+    .xy-button {
+        height: 50px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-family: PingFangSC-Regular;
+    }
+
+    .xy-input-affix-wrapper .xy-input:not(:first-child) {
+        padding-left: 36px;
+    }
+    .xy-input-affix-wrapper .xy-input-prefix {
+        font-size: 21px;
+        transform: translateY(-58%);
+        left: 10px;
+        color: #ccc;
+    }
+}
+.landing-links {
+    text-align: left;
+    margin-top: 24px;
+    line-height: 22px;
+}
