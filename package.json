@@ -12,11 +12,17 @@
         "*.scss"
     ],
     "scripts": {
+        "test": "jest",
+        "coverage": "jest --coverage",
         "set-webpack-env": "cross-env TS_NODE_PROJECT=\"tsconfigwebpack.json\"",
         "dev": "yarn run set-webpack-env cross-env WEBPACK_ENV=dev cross-env webpack-dev-server",
         "build-pro": "yarn run set-webpack-env cross-env WEBPACK_ENV=prod webpack"
     },
     "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "@babel/preset-typescript": "^7.3.3",
+        "@testing-library/react": "^8.0.1",
         "@types/case-sensitive-paths-webpack-plugin": "^2.1.2",
         "@types/classnames": "^2.2.8",
         "@types/copy-webpack-plugin": "^5.0.0",
@@ -39,6 +45,8 @@
         "@types/webpack-env": "^1.13.9",
         "@types/webpack-manifest-plugin": "^2.0.0",
         "awesome-typescript-loader": "^5.2.1",
+        "babel-jest": "^24.8.0",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
         "case-sensitive-paths-webpack-plugin": "^2.2.0",
         "clean-webpack-plugin": "^3.0.0",
         "connect-history-api-fallback": "^1.6.0",

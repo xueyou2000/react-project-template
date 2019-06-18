@@ -32,7 +32,7 @@ export default class Authorization {
      * 构造函数
      * @param changeHandle
      */
-    public constructor(changeHandle: TokenChangeHandle) {
+    public constructor(changeHandle?: TokenChangeHandle) {
         this.initialize();
         this.onTokenChange = changeHandle;
     }
@@ -60,6 +60,11 @@ export default class Authorization {
             throw new Error("Fail Set Token, parameter cannot be empty!");
         }
         this._token = val || null;
+        if (this.token !== null) {
+            sessionStorage.setItem(Authorization.StorageKeyWord, this._token);
+        } else {
+            sessionStorage.removeItem(Authorization.StorageKeyWord);
+        }
         if (this.onTokenChange) {
             this.onTokenChange(this.token);
         }
