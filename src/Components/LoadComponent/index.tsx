@@ -1,7 +1,6 @@
 import React from "react";
 import loadable from "@loadable/component";
-import Skeleton from "xy-skeleton";
-import "xy-skeleton/assets/index.css";
+import Loading from "@/Components/Loading";
 
 /**
  * 动态加载路由组件
@@ -9,6 +8,6 @@ import "xy-skeleton/assets/index.css";
  */
 export default function LoadComponent(loader: any) {
     return loadable(loader, {
-        fallback: <Skeleton loading={true} />
+        fallback: <Loading />
     });
 }

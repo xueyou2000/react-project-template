@@ -30,7 +30,10 @@ export default () => {
         },
         resolve: {
             extensions: [".ts", ".tsx", ".js", ".jsx"],
-            alias: { "@": Path.join(__dirname, "src") }
+            alias: {
+                "@": Path.join(__dirname, "src"),
+                "utils-hooks$": Path.resolve(__dirname, "node_modules/utils-hooks")
+            }
         },
         externals: {
             react: "React",
@@ -97,7 +100,14 @@ export default () => {
                         name: "components",
                         chunks: "all",
                         enforce: true,
-                        priority: 1
+                        priority: 2
+                    },
+                    common: {
+                        test: /(@fortawesome)/,
+                        name: "common",
+                        chunks: "all",
+                        enforce: true,
+                        priority: -5
                     },
                     vendors: {
                         test: /[\\/]node_modules[\\/]/,

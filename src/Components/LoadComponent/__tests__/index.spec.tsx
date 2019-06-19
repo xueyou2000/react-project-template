@@ -19,8 +19,8 @@ describe("LoadComponent", () => {
         const Component = LoadComponent(fn);
         const wrapper = render(<Component />);
 
-        const skeleton = wrapper.container.querySelector(".xy-skeleton");
-        expect(skeleton.classList.contains("loading")).toBeTruthy();
+        const loadingComponent = wrapper.container.querySelector(".xy-grid-pulse");
+        expect(loadingComponent).toBeDefined();
 
         await fn();
 
