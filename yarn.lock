@@ -8837,7 +8837,7 @@ utils-hooks@0.0.69:
   resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.69.tgz#b711fb1aaea7056f3ad662db5e71cfd034ca71af"
   integrity sha1-txH7Gq6nBW861mLbXnHP0DTKca8=
 
-utils-hooks@0.0.71:
+utils-hooks@0.0.71, utils-hooks@^0.0.71:
   version "0.0.71"
   resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.71.tgz#d26d8fb6d2a5bffebc50fa7f190b85d195759706"
   integrity sha1-0m2PttKlv/68UPp/GQuF0ZV1lwY=
@@ -9260,10 +9260,10 @@ xtend@^4.0.0, xtend@~4.0.1:
   resolved "https://registry.npm.taobao.org/xtend/download/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
 
-xy-alert@0.0.31:
-  version "0.0.31"
-  resolved "https://registry.npm.taobao.org/xy-alert/download/xy-alert-0.0.31.tgz#522952e18a42029ec87cc47a90c28ad888890632"
-  integrity sha1-UilS4YpCAp7IfMR6kMKK2IiJBjI=
+xy-alert@0.0.32:
+  version "0.0.32"
+  resolved "https://registry.npm.taobao.org/xy-alert/download/xy-alert-0.0.32.tgz#f4540fde0a2ca9685f15145970df2de86e5878a7"
+  integrity sha1-9FQP3gosqWhfFRRZcN8t6G5YeKc=
   dependencies:
     "@fortawesome/free-solid-svg-icons" "^5.8.1"
     "@fortawesome/react-fontawesome" "^0.1.4"
@@ -9322,10 +9322,10 @@ xy-empty@0.0.8:
     react "^16.8.2"
     react-dom "^16.8.2"
 
-xy-form@0.0.97:
-  version "0.0.97"
-  resolved "https://registry.npm.taobao.org/xy-form/download/xy-form-0.0.97.tgz#a777262f1327830edb8f68d5f7576095377a0fac"
-  integrity sha1-p3cmLxMngw7bj2jV91dglTd6D6w=
+xy-form@0.0.98:
+  version "0.0.98"
+  resolved "https://registry.npm.taobao.org/xy-form/download/xy-form-0.0.98.tgz#babbbdd2caf26a89781f6fe1c990f103ac60f333"
+  integrity sha1-uru90sryaol4H2/hyZDxA6xg8zM=
   dependencies:
     classnames "^2.2.6"
     react "^16.8.2"
@@ -9441,6 +9441,17 @@ xy-time-select@0.0.41:
     utils-hooks "0.0.71"
     xy-autocomplete "0.0.91"
     xy-input "0.0.91"
+
+xy-tooltip@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.npm.taobao.org/xy-tooltip/download/xy-tooltip-0.1.4.tgz#15b170f87dc8342a88aba8141b80ba3ee2af1fe8"
+  integrity sha1-FbFw+H3INCqIq6gUG4C6PuKvH+g=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.71"
+    xy-trigger "0.0.94"
 
 xy-trigger@0.0.94:
   version "0.0.94"

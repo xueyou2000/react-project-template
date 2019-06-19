@@ -1,18 +1,36 @@
 @import "./themes.scss";
 
-.transition-wrapper {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    width: 100%;
-    min-height: 100vh;
+.highligh-input {
+    .xy-input {
+        animation-duration: 2s;
+        animation-name: flashBourder;
+        // animation-timing-function: cubic-bezier(0.05, 0.55, 0.36, 1);
+    }
+}
 
-    &.transition-mode-both {
-        .transition-appear-active,
-        .transition-leave-active {
-            position: absolute;
-            width: 100%;
-            top: 0;
-        }
+@keyframes flashBourder {
+    from {
+        border: 1px solid #ff4949;
+        box-shadow: 0 0 0 0px #ff4949;
+    }
+
+    25% {
+        border: 1px solid #ff4949;
+        box-shadow: 0 0 0 4px #ff494973;
+    }
+
+    50% {
+        border: 1px solid #ff4949;
+        box-shadow: 0 0 0 0px #ff4949;
+    }
+
+    75% {
+        border: 1px solid #ff4949;
+        box-shadow: 0 0 0 4px #ff494973;
+    }
+
+    to {
+        border: 1px solid #ff4949;
+        box-shadow: 0 0 0 0px #ff4949;
     }
 }

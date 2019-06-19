@@ -1,0 +1,23 @@
+$CountDown: "xy-count-down";
+@import "../../Assets/Styles/themes.scss";
+
+.#{$CountDown} {
+    width: 74px;
+    display: block;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.#{$CountDown}_icon {
+    margin-right: 8px;
+}
+
+.#{$CountDown}--disabled {
+    color: $--disabled-color;
+
+    .#{$CountDown}_link {
+        color: $--disabled-color;
+    }
+}

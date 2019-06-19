@@ -8,6 +8,8 @@ export const RedirectPath = "/user/login";
 
 export const ForgetPasswordtPath = "/user/forget-password";
 
+export const ForgetPasswordtResultPath = `${ForgetPasswordtPath}-result`;
+
 /**
  * 用户管理路由
  */
@@ -19,25 +21,13 @@ export const UserRoutesConfig: RouteConfig[] = [
         component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/Login"))
     },
     {
-        path: "/user/register",
-        title: "用户注册",
-        exact: true,
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/test"))
-    },
-    {
-        path: "/user/register-result",
-        title: "用户注册完成",
-        exact: true,
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/test"))
-    },
-    {
         path: ForgetPasswordtPath,
         title: "找回密码",
         exact: true,
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/test"))
+        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/ResetPassword"))
     },
     {
-        path: `${ForgetPasswordtPath}-result`,
+        path: ForgetPasswordtResultPath,
         title: "找回密码完成",
         exact: true,
         component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/test"))

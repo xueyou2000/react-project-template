@@ -93,12 +93,14 @@
         "react-router": "^5.0.1",
         "react-router-config": "^5.0.1",
         "react-router-dom": "^5.0.1",
-        "xy-alert": "0.0.31",
+        "utils-hooks": "^0.0.71",
+        "xy-alert": "0.0.32",
         "xy-button": "^1.0.2",
-        "xy-form": "0.0.97",
+        "xy-form": "0.0.98",
         "xy-grid": "^0.0.6",
         "xy-input": "^0.0.91",
         "xy-page-transition": "0.0.21",
-        "xy-skeleton": "^0.0.5"
+        "xy-skeleton": "^0.0.5",
+        "xy-tooltip": "^0.1.4"
     }
 }

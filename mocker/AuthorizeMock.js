@@ -19,5 +19,39 @@ module.exports = {
         }
 
         return res.json(responseData);
+    },
+    "POST /boss/boss-server/operatorInfo/forgetPassword": (req, res) => {
+        const { phone, verifyCode } = req.body;
+        let responseData;
+
+        if (phone === "15527568707" && verifyCode === "123456") {
+            responseData = {
+                status: "200",
+                msg: "重置密码成功"
+            };
+        } else {
+            responseData = {
+                status: "WIFI-000000033",
+                msg: "手机号不正确"
+            };
+        }
+        return res.json(responseData);
+    },
+    "POST /boss/boss-server/operatorInfo/verifyCodeByPhone": (req, res) => {
+        const { phone } = req.params;
+        let responseData;
+
+        if (phone === "15527568707") {
+            responseData = {
+                status: "200",
+                msg: "发送验证码成功"
+            };
+        } else {
+            responseData = {
+                status: "WIFI-000000031",
+                msg: "手机号不正确"
+            };
+        }
+        return res.json(responseData);
     }
 };

@@ -17,14 +17,12 @@ function ApplicationRoot({ routes, location, history }: ApplicationRootProps) {
     }, [location.pathname]);
 
     return (
-        <PageTransition timeout={1000} disabled={!["/", RedirectPath].some((x) => x === location.pathname)}>
-            <Switch location={location} key={location.key}>
-                {routes.map((config, i) => {
-                    const RouteComponent = config.route || Route;
-                    return <RouteComponent key={i} {...config} />;
-                })}
-            </Switch>
-        </PageTransition>
+        <Switch location={location} key={location.key}>
+            {routes.map((config, i) => {
+                const RouteComponent = config.route || Route;
+                return <RouteComponent key={i} {...config} />;
+            })}
+        </Switch>
     );
 }
 

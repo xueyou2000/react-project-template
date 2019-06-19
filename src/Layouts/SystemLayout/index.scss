@@ -2,68 +2,68 @@
     width: 100%;
     min-height: 300px;
     background: bisque;
-    animation-duration: 1s;
-    animation-fill-mode: both;
+    // animation-duration: 1s;
+    // animation-fill-mode: both;
 
     // &.transition-appear {
     //     opacity: 0;
     //     transform: translate3d(-100%, 0, 0);
     // }
 
-    &.transition-appear.transition-appear-active {
-        animation-name: bounceInRight;
-    }
+    // &.transition-appear.transition-appear-active {
+    //     animation-name: bounceInRight;
+    // }
 
     // &.transition-leave {
     //     opacity: 1;
     //     transform: translate3d(0, 0, 0);
     // }
 
-    &.transition-leave.transition-leave-active {
-        animation-name: bounceOutRight;
-    }
+    // &.transition-leave.transition-leave-active {
+    //     animation-name: bounceOutRight;
+    // }
 }
 
-@keyframes bounceInRight {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-        animation-timing-function: cubic-bezier(0.05, 0.55, 0.36, 1);
-    }
+// @keyframes bounceInRight {
+//     from,
+//     60%,
+//     75%,
+//     90%,
+//     to {
+//         animation-timing-function: cubic-bezier(0.05, 0.55, 0.36, 1);
+//     }
 
-    from {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
+//     from {
+//         opacity: 0;
+//         transform: translate3d(100%, 0, 0);
+//     }
 
-    60% {
-        opacity: 1;
-        transform: translate3d(-25px, 0, 0);
-    }
+//     60% {
+//         opacity: 1;
+//         transform: translate3d(-25px, 0, 0);
+//     }
 
-    75% {
-        transform: translate3d(2px, 0, 0);
-    }
+//     75% {
+//         transform: translate3d(2px, 0, 0);
+//     }
 
-    90% {
-        transform: translate3d(-2px, 0, 0);
-    }
+//     90% {
+//         transform: translate3d(-2px, 0, 0);
+//     }
 
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
+//     to {
+//         transform: translate3d(0, 0, 0);
+//     }
+// }
 
-@keyframes bounceOutRight {
-    5% {
-        opacity: 1;
-        transform: translate3d(-2px, 0, 0);
-    }
+// @keyframes bounceOutRight {
+//     5% {
+//         opacity: 1;
+//         transform: translate3d(-2px, 0, 0);
+//     }
 
-    to {
-        opacity: 0;
-        transform: translate3d(2000px, 0, 0);
-    }
-}
+//     to {
+//         opacity: 0;
+//         transform: translate3d(2000px, 0, 0);
+//     }
+// }

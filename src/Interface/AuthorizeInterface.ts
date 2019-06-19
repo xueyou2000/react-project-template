@@ -21,3 +21,17 @@ export interface LoginVo {
      */
     token: string;
 }
+
+/**
+ * 找回密码dtp
+ */
+export interface ResetPasswordDto {
+    /**
+     * 手机号
+     */
+    phone: string;
+    /**
+     * 短信验证码
+     */
+    verifyCode: string;
+}
