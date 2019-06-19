@@ -30,7 +30,7 @@ export const UserRoutesConfig: RouteConfig[] = [
         path: ForgetPasswordtResultPath,
         title: "找回密码完成",
         exact: true,
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/test"))
+        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/ResetPassword/Result"))
     }
 ];
 

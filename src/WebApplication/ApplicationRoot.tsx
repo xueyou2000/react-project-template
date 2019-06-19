@@ -17,7 +17,7 @@ function ApplicationRoot({ routes, location, history }: ApplicationRootProps) {
     }, [location.pathname]);
 
     return (
-        <Switch location={location} key={location.key}>
+        <Switch>
             {routes.map((config, i) => {
                 const RouteComponent = config.route || Route;
                 return <RouteComponent key={i} {...config} />;

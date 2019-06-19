@@ -1,0 +1,61 @@
+$Result: "xy-result";
+$status-list: (success, info, error, warning);
+
+.#{$Result} {
+    width: 72%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 56px;
+    box-sizing: border-box;
+}
+
+.#{$Result}_icon {
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 24px;
+    font-size: 64px;
+}
+
+.#{$Result}_title-outer {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+.#{$Result}_title-inner {
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.#{$Result}_description {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-bottom: 24px;
+}
+
+.#{$Result}_actions {
+    margin-top: 32px;
+}
+
+@each $status in $status-list {
+    $color: #1890ff !default;
+
+    @if ($status == success) {
+        $color: #52c41a;
+    } @else if ($status == warning) {
+        $color: #faad14;
+    } @else if ($status == info) {
+        $color: #1890ff;
+    } @else if ($status == error) {
+        $color: #f5222d;
+    }
+
+    .#{$Result}--status-#{$status} {
+        .#{$Result}_icon {
+            color: $color;
+        }
+    }
+}
