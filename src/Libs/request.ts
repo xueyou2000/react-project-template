@@ -1,5 +1,5 @@
 import { ResponseGeneric } from "@/Interface/ResponseInterface";
-import Axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import Axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
 
 /**
  * 服务器响应成功状态码
@@ -74,7 +74,7 @@ export default class Request {
      * @param data
      * @param options
      */
-    public post<T>(url: string, data?: any, options: AxiosRequestConfig = {}) {
+    public post<T = any>(url: string, data?: any, options: AxiosRequestConfig = {}) {
         return this.fetch
             .post<ResponseGeneric<T>>(url, data, options)
             .then((response) => {
@@ -91,7 +91,20 @@ export default class Request {
                     throw new RequestError(statusText, status, response);
                 }
             })
-            .catch(this.onrejected);
+            .catch((error: AxiosError) => {
+                if ("errorType" in error) {
+                    return Promise.reject(error);
+                } else {
+                    // 将 AxiosError 转换为 RequestError
+                    return Promise.reject(new RequestError(CodeMessage[error.response.status] || error.message, error.response.status, error.response));
+                }
+            })
+            .catch((error: RequestError) => {
+                if (this.onrejected) {
+                    return this.onrejected(error);
+                }
+                return Promise.reject(error);
+            });
     }
 }
 
@@ -113,42 +126,32 @@ export enum RequestErrorType {
  * 网络请求异常
  */
 export class RequestError extends Error {
-    private _statusCode: number | string;
-    private _respoense: AxiosResponse<ResponseGeneric>;
-    private _errorType: RequestErrorType;
+    /**
+     * 获取状态码
+     */
+    public statusCode: number | string;
+
+    /**
+     * 获取响应
+     */
+    public response: AxiosResponse<ResponseGeneric>;
+
+    /**
+     * 异常类型
+     */
+    public errorType: RequestErrorType;
 
     /**
      * 构造函数
      * @param message
      * @param statusCode
-     * @param respoense
+     * @param response
      * @param errorType
      */
-    constructor(message: string, statusCode: number | string, respoense: AxiosResponse, errorType: RequestErrorType = RequestErrorType.NetWorkException) {
+    constructor(message: string, statusCode: number | string, response: AxiosResponse, errorType: RequestErrorType = RequestErrorType.NetWorkException) {
         super(message || CodeMessage[statusCode]);
-        this._statusCode = statusCode;
-        this._respoense = respoense;
-        this._errorType = errorType;
-    }
-
-    /**
-     * 获取状态码
-     */
-    public get statusCode() {
-        return this._statusCode;
-    }
-
-    /**
-     * 获取响应
-     */
-    public get respoense() {
-        return this._respoense;
-    }
-
-    /**
-     * 异常类型
-     */
-    public get errorType() {
-        return this._errorType;
+        this.statusCode = statusCode;
+        this.response = response;
+        this.errorType = errorType;
     }
 }

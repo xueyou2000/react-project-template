@@ -656,7 +656,7 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@fortawesome/fontawesome-common-types@^0.2.19":
+"@fortawesome/fontawesome-common-types@^0.2.17", "@fortawesome/fontawesome-common-types@^0.2.19":
   version "0.2.19"
   resolved "https://registry.npm.taobao.org/@fortawesome/fontawesome-common-types/download/@fortawesome/fontawesome-common-types-0.2.19.tgz#754a0f85e1290858152e1c05700ab502b11197f1"
   integrity sha1-dUoPheEpCFgVLhwFcAq1ArERl/E=
@@ -668,14 +668,21 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.19"
 
-"@fortawesome/free-regular-svg-icons@^5.9.0":
+"@fortawesome/free-regular-svg-icons@^5.8.2", "@fortawesome/free-regular-svg-icons@^5.9.0":
   version "5.9.0"
   resolved "https://registry.npm.taobao.org/@fortawesome/free-regular-svg-icons/download/@fortawesome/free-regular-svg-icons-5.9.0.tgz#b16b325bdcdf51abebc547313cb75c3ef722ca04"
   integrity sha1-sWsyW9zfUavrxUcxPLdcPvciygQ=
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.19"
 
-"@fortawesome/free-solid-svg-icons@^5.8.1", "@fortawesome/free-solid-svg-icons@^5.9.0":
+"@fortawesome/free-solid-svg-icons@5.8.1":
+  version "5.8.1"
+  resolved "https://registry.npm.taobao.org/@fortawesome/free-solid-svg-icons/download/@fortawesome/free-solid-svg-icons-5.8.1.tgz#086c70f95b34a4bcf6f50ff1078d46e53486eb52"
+  integrity sha1-CGxw+Vs0pLz29Q/xB41G5TSG61I=
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.17"
+
+"@fortawesome/free-solid-svg-icons@^5.8.1", "@fortawesome/free-solid-svg-icons@^5.8.2", "@fortawesome/free-solid-svg-icons@^5.9.0":
   version "5.9.0"
   resolved "https://registry.npm.taobao.org/@fortawesome/free-solid-svg-icons/download/@fortawesome/free-solid-svg-icons-5.9.0.tgz#1c73e7bac17417d23f934d83f7fff5b100a7fda9"
   integrity sha1-HHPnusF0F9I/k02D9//1sQCn/ak=
@@ -8805,6 +8812,26 @@ utila@^0.4.0, utila@~0.4:
   resolved "https://registry.npm.taobao.org/utila/download/utila-0.4.0.tgz#8a16a05d445657a3aea5eecc5b12a4fa5379772c"
   integrity sha1-ihagXURWV6Oupe7MWxKk+lN5dyw=
 
+utils-dom@0.0.65:
+  version "0.0.65"
+  resolved "https://registry.npm.taobao.org/utils-dom/download/utils-dom-0.0.65.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Futils-dom%2Fdownload%2Futils-dom-0.0.65.tgz#4fcd6e289f9eae65b1d0598388e1b2c2f604b8ae"
+  integrity sha1-T81uKJ+ermWx0FmDiOGywvYEuK4=
+
+utils-dom@0.0.66:
+  version "0.0.66"
+  resolved "https://registry.npm.taobao.org/utils-dom/download/utils-dom-0.0.66.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Futils-dom%2Fdownload%2Futils-dom-0.0.66.tgz#2085f76e5de1cbaf7b7559e176da43547ad825d0"
+  integrity sha1-IIX3bl3hy697dVnhdtpDVHrYJdA=
+
+utils-dom@0.0.70:
+  version "0.0.70"
+  resolved "https://registry.npm.taobao.org/utils-dom/download/utils-dom-0.0.70.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Futils-dom%2Fdownload%2Futils-dom-0.0.70.tgz#0c2a8a9d3224baa9f008eccecc35645ed431ffd5"
+  integrity sha1-DCqKnTIkuqnwCOzOzDVkXtQx/9U=
+
+utils-hooks@0.0.66:
+  version "0.0.66"
+  resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.66.tgz#94f31d8fd04256550c4e981c9a4e7cff6e8c3bec"
+  integrity sha1-lPMdj9BCVlUMTpgcmk58/26MO+w=
+
 utils-hooks@0.0.69:
   version "0.0.69"
   resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.69.tgz#b711fb1aaea7056f3ad662db5e71cfd034ca71af"
@@ -9233,6 +9260,30 @@ xtend@^4.0.0, xtend@~4.0.1:
   resolved "https://registry.npm.taobao.org/xtend/download/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
   integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
 
+xy-alert@0.0.31:
+  version "0.0.31"
+  resolved "https://registry.npm.taobao.org/xy-alert/download/xy-alert-0.0.31.tgz#522952e18a42029ec87cc47a90c28ad888890632"
+  integrity sha1-UilS4YpCAp7IfMR6kMKK2IiJBjI=
+  dependencies:
+    "@fortawesome/free-solid-svg-icons" "^5.8.1"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.69"
+
+xy-autocomplete@0.0.91:
+  version "0.0.91"
+  resolved "https://registry.npm.taobao.org/xy-autocomplete/download/xy-autocomplete-0.0.91.tgz#a90733d4b6afb31638d68183c2d047d2eb4b2542"
+  integrity sha1-qQcz1LavsxY41oGDwtBH0utLJUI=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.66"
+    xy-select "1.0.8"
+    xy-trigger "0.0.94"
+
 xy-button@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/xy-button/download/xy-button-1.0.2.tgz#292fd3b9784d0b81a4071e36a2e8626e7dbb8d6d"
@@ -9245,10 +9296,36 @@ xy-button@^1.0.2:
     react "^16.8.2"
     react-dom "^16.8.2"
 
-xy-form@^0.0.96:
-  version "0.0.96"
-  resolved "https://registry.npm.taobao.org/xy-form/download/xy-form-0.0.96.tgz#fa4a65d0eee1c17f7e2da40a1c49913f50b8f244"
-  integrity sha1-+kpl0O7hwX9+LaQKHEmRP1C48kQ=
+xy-date-picker@0.0.31:
+  version "0.0.31"
+  resolved "https://registry.npm.taobao.org/xy-date-picker/download/xy-date-picker-0.0.31.tgz#cbd3693329e241cee32c3b4f5ad894b265a07c5a"
+  integrity sha1-y9NpMyniQc7jLDtPWtiUsmWgfFo=
+  dependencies:
+    "@fortawesome/free-regular-svg-icons" "^5.8.2"
+    "@fortawesome/free-solid-svg-icons" "^5.8.2"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-dom "0.0.70"
+    utils-hooks "0.0.71"
+    xy-input "0.0.91"
+    xy-time-picker "^0.0.4"
+    xy-trigger "0.0.94"
+
+xy-empty@0.0.8:
+  version "0.0.8"
+  resolved "https://registry.npm.taobao.org/xy-empty/download/xy-empty-0.0.8.tgz#605662136cee758f34402d7d0d6f936ef1c0b9e0"
+  integrity sha1-YFZiE2zudY80QC19DW+TbvHAueA=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+
+xy-form@0.0.97:
+  version "0.0.97"
+  resolved "https://registry.npm.taobao.org/xy-form/download/xy-form-0.0.97.tgz#a777262f1327830edb8f68d5f7576095377a0fac"
+  integrity sha1-p3cmLxMngw7bj2jV91dglTd6D6w=
   dependencies:
     classnames "^2.2.6"
     react "^16.8.2"
@@ -9257,6 +9334,9 @@ xy-form@^0.0.96:
     validate-methods "^1.0.53"
     validate-provider "^1.0.33"
     validate-runner "^1.0.22"
+    xy-date-picker "0.0.31"
+    xy-time-picker "0.0.62"
+    xy-time-select "0.0.41"
 
 xy-grid@0.0.6, xy-grid@^0.0.6:
   version "0.0.6"
@@ -9268,7 +9348,7 @@ xy-grid@0.0.6, xy-grid@^0.0.6:
     react-dom "^16.8.2"
     utils-hooks "0.0.69"
 
-xy-input@^0.0.91:
+xy-input@0.0.91, xy-input@^0.0.91:
   version "0.0.91"
   resolved "https://registry.npm.taobao.org/xy-input/download/xy-input-0.0.91.tgz#1db4db3020c34ec806c54829528326b9e362e31b"
   integrity sha1-HbTbMCDDTsgGxUgpUoMmueNi4xs=
@@ -9281,14 +9361,29 @@ xy-input@^0.0.91:
     react-dom "^16.8.2"
     utils-hooks "0.0.69"
 
-xy-page-transition@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npm.taobao.org/xy-page-transition/download/xy-page-transition-0.0.2.tgz#5711366e9328ce211e28aa5e30c8d6ea18c09c0b"
-  integrity sha1-VxE2bpMoziEeKKpeMMjW6hjAnAs=
+xy-page-transition@0.0.21:
+  version "0.0.21"
+  resolved "https://registry.npm.taobao.org/xy-page-transition/download/xy-page-transition-0.0.21.tgz#9f20dabe57e2f6f71c72a0de6b6bdbf04419fae5"
+  integrity sha1-nyDavlfi9vcccqDea2vb8EQZ+uU=
   dependencies:
     classnames "^2.2.6"
     react "^16.8.2"
     react-dom "^16.8.2"
+
+xy-select@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.taobao.org/xy-select/download/xy-select-1.0.8.tgz#18fd1f20b5cb547ab6d95de87f65fb1ed797a5a4"
+  integrity sha1-GP0fILXLVHq22V3of2X7HteXpaQ=
+  dependencies:
+    "@fortawesome/free-solid-svg-icons" "5.8.1"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-dom "0.0.66"
+    utils-hooks "0.0.71"
+    xy-empty "0.0.8"
+    xy-trigger "0.0.94"
 
 xy-skeleton@^0.0.5:
   version "0.0.5"
@@ -9299,6 +9394,64 @@ xy-skeleton@^0.0.5:
     react "^16.8.2"
     react-dom "^16.8.2"
     xy-grid "0.0.6"
+
+xy-time-picker@0.0.62:
+  version "0.0.62"
+  resolved "https://registry.npm.taobao.org/xy-time-picker/download/xy-time-picker-0.0.62.tgz#a99685ab2bde61a29b68f246fd9a37c1e579f03b"
+  integrity sha1-qZaFqyveYaKbaPJG/Zo3weV58Ds=
+  dependencies:
+    "@fortawesome/free-regular-svg-icons" "^5.8.2"
+    "@fortawesome/free-solid-svg-icons" "^5.8.2"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-dom "0.0.70"
+    utils-hooks "0.0.71"
+    xy-input "0.0.91"
+    xy-trigger "0.0.94"
+
+xy-time-picker@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npm.taobao.org/xy-time-picker/download/xy-time-picker-0.0.4.tgz#a6abc30505ea6fe40958e7a675e260a683877564"
+  integrity sha1-pqvDBQXqb+QJWOemdeJgpoOHdWQ=
+  dependencies:
+    "@fortawesome/free-regular-svg-icons" "^5.8.2"
+    "@fortawesome/free-solid-svg-icons" "^5.8.2"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.71"
+    xy-input "0.0.91"
+    xy-trigger "0.0.94"
+
+xy-time-select@0.0.41:
+  version "0.0.41"
+  resolved "https://registry.npm.taobao.org/xy-time-select/download/xy-time-select-0.0.41.tgz#4e28344ca16981fe488b92eb0179e69271082726"
+  integrity sha1-Tig0TKFpgf5Ii5LrAXnmknEIJyY=
+  dependencies:
+    "@fortawesome/free-regular-svg-icons" "^5.8.2"
+    "@fortawesome/free-solid-svg-icons" "^5.8.2"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-dom "0.0.70"
+    utils-hooks "0.0.71"
+    xy-autocomplete "0.0.91"
+    xy-input "0.0.91"
+
+xy-trigger@0.0.94:
+  version "0.0.94"
+  resolved "https://registry.npm.taobao.org/xy-trigger/download/xy-trigger-0.0.94.tgz#e4f8adcc5b8f727433fcff8839a52986ec7ecf23"
+  integrity sha1-5PitzFuPcnQz/P+IOaUphux+zyM=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-dom "0.0.65"
+    utils-hooks "0.0.71"
 
 y18n@^3.2.1:
   version "3.2.1"

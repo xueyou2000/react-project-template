@@ -11,6 +11,13 @@ export default class Application {
     private _history: H.History;
 
     /**
+     * 获取当前路由面包屑
+     */
+    public get breadcrumb() {
+        return this._breadcrumb;
+    }
+
+    /**
      * 构造函数
      * @param history
      */
@@ -30,10 +37,10 @@ export default class Application {
 
         // 注入网络请求工具
         diContext.request = new Request(Environment.baseurl, (error: RequestError) => {
-            const { status, notice } = error.respoense.data;
+            const { status, notice } = error.response.data;
 
             // 没有权限则重定向到登陆页面
-            if (error.respoense.status === 401 || status === "401") {
+            if (error.response.status === 401 || status === "401") {
                 _history.replace(RedirectPath);
             }
 
@@ -56,7 +63,6 @@ export default class Application {
      * 路由改变事件
      */
     public onRouterChange(path: string) {
-        // todo #1: 获取当前路由配置
         // 生成面包屑
         this._breadcrumb = matchRoutes(RootRoutesConfig, path);
         if (this._breadcrumb.length > 0) {

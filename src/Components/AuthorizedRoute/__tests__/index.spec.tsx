@@ -17,6 +17,7 @@ describe("AuthorizedRoute", () => {
             </MemoryRouter>
         );
         expect(wrapper.getByText("请登录")).toBeDefined();
+        expect(wrapper).toMatchSnapshot();
     });
 
     test("when exist bearer token, allowed to pass route", () => {
@@ -34,5 +35,6 @@ describe("AuthorizedRoute", () => {
             </MemoryRouter>
         );
         expect(wrapper.getByText("Home")).toBeDefined();
+        expect(wrapper).toMatchSnapshot();
     });
 });

@@ -1,9 +1,10 @@
 import "@/Assets/Styles/base.scss";
 import "@/Assets/Styles/index.scss";
 import "@/Assets/Styles/global.scss";
+import "@/Assets/Styles/overrite.scss";
 
 import { RootRoutesConfig } from "@/WebApplication/RoutesConfig";
-import * as Sentry from "@sentry/browser";
+// import * as Sentry from "@sentry/browser";
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
