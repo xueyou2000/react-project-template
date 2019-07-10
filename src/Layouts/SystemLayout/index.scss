@@ -1,69 +1,130 @@
 .system-page {
-    width: 100%;
-    min-height: 300px;
-    background: bisque;
-    // animation-duration: 1s;
-    // animation-fill-mode: both;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background: #f0f2f5;
+}
+.system-page__left-sidebar {
+    flex: 0 0 256px;
+    width: 256px;
+    min-height: 100vh;
+    box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+    position: relative;
+    z-index: 10;
 
-    // &.transition-appear {
-    //     opacity: 0;
-    //     transform: translate3d(-100%, 0, 0);
-    // }
+    .sider-menu-list {
+        min-height: calc(100% - 64px);
+    }
+}
+.system-page__right-content {
+    flex: 1;
+    position: relative;
+    width: calc(100% - 256px);
+}
+.system-page__login-panel {
+    position: relative;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 16px;
+    transition: all 0.3s;
+    background: #002140;
+    overflow: hidden;
 
-    // &.transition-appear.transition-appear-active {
-    //     animation-name: bounceInRight;
-    // }
+    img,
+    h1 {
+        display: inline-block;
+        vertical-align: middle;
+    }
 
-    // &.transition-leave {
-    //     opacity: 1;
-    //     transform: translate3d(0, 0, 0);
-    // }
+    img {
+        height: 39px;
+        margin-right: 16px;
+    }
 
-    // &.transition-leave.transition-leave-active {
-    //     animation-name: bounceOutRight;
-    // }
+    h1 {
+        color: #fff;
+        font-size: 20px;
+        margin: 0;
+        font-weight: 600;
+    }
 }
 
-// @keyframes bounceInRight {
-//     from,
-//     60%,
-//     75%,
-//     90%,
-//     to {
-//         animation-timing-function: cubic-bezier(0.05, 0.55, 0.36, 1);
-//     }
+.page-tabs {
+    .tab-close {
+        position: absolute;
+        right: 4px;
+        top: -10px;
+        font-size: 12px;
+        display: none;
 
-//     from {
-//         opacity: 0;
-//         transform: translate3d(100%, 0, 0);
-//     }
+        &:hover {
+            .ant_icon {
+                color: #0076e4;
+            }
+            .ant_icon:before {
+                content: "\E62E";
+            }
+        }
+    }
 
-//     60% {
-//         opacity: 1;
-//         transform: translate3d(-25px, 0, 0);
-//     }
+    .scrollable-tabbar {
+        border-bottom: 1px solid #d1dbe5;
+        padding: 0;
+        position: relative;
+        margin: 0;
+    }
+    .scrollable-tabbar.overflow {
+        padding: 0 32px;
+    }
+    .scrollable-tabbar .scrollable-tabbar__wrap {
+        margin-bottom: -1px;
+    }
+    .scrollable-tabbar .xy-tabs-tabbar {
+        margin: 0;
+        justify-content: initial;
+    }
+    .xy-tabs .xy-tabs-tab {
+        box-sizing: border-box;
+        line-height: 45px;
+        display: inline-block;
+        list-style: none;
+        font-size: 14px;
+        color: #8391a5;
+        position: relative;
+        cursor: pointer;
+        user-select: none;
+        padding: 0 16px;
+        width: 120px;
+        height: 45px;
+        background-color: #f6f6f6;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #d9d9d9;
+        margin-right: 5px;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        border-bottom: 2px solid transparent;
+        margin-bottom: 3px;
 
-//     75% {
-//         transform: translate3d(2px, 0, 0);
-//     }
+        &.active {
+            line-height: 42px;
+            color: #348eed;
+            border-bottom: 3px solid transparent;
+            background-color: #fff;
+            position: relative;
+            height: 48px;
+            margin-bottom: -5px;
 
-//     90% {
-//         transform: translate3d(-2px, 0, 0);
-//     }
+            .tab-close {
+                display: block;
+            }
+        }
 
-//     to {
-//         transform: translate3d(0, 0, 0);
-//     }
-// }
-
-// @keyframes bounceOutRight {
-//     5% {
-//         opacity: 1;
-//         transform: translate3d(-2px, 0, 0);
-//     }
-
-//     to {
-//         opacity: 0;
-//         transform: translate3d(2000px, 0, 0);
-//     }
-// }
+        &:hover {
+            .tab-close {
+                display: block;
+            }
+        }
+    }
+}

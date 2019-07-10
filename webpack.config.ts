@@ -102,13 +102,6 @@ export default () => {
                         enforce: true,
                         priority: 2
                     },
-                    common: {
-                        test: /(@fortawesome)/,
-                        name: "common",
-                        chunks: "all",
-                        enforce: true,
-                        priority: -5
-                    },
                     vendors: {
                         test: /[\\/]node_modules[\\/]/,
                         name: "vendors",

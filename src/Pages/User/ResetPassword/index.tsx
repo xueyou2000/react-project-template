@@ -4,29 +4,16 @@ import { ResetPasswordDto } from "@/Interface/AuthorizeInterface";
 import { Link, RouteComponentProps, withRouter } from "react-router-dom";
 import { RedirectPath, ForgetPasswordtResultPath } from "@/WebApplication/RoutesConfig";
 import AuthorizeService from "@/Services/AuthorizeService";
-import Alert from "xy-alert";
-import "xy-alert/assets/index.css";
-import { Button } from "xy-button";
-import "xy-button/assets/index.css";
-import { Form, FormItem, FormSubmitButton } from "xy-form";
-import "xy-form/assets/index.css";
-import { ValidateConfig, ValidateResult } from "xy-form/es/ValidateUtils/ValidateInterface";
-import "xy-grid/assets/index.css";
-import { Input } from "xy-input";
-import "xy-input/assets/index.css";
+import { Button, AlertTips, Form, FormItem, Input, FormSubmitButton, ValidateConfig, ValidateResult, FormMethods } from "@/Components/MyComponentTools";
 import Countdown from "@/Components/Countdown";
-import { FormMethods } from "xy-form/es/interface";
 import "../Login/index.scss";
-
-import Tooltip from "xy-tooltip";
-import "xy-tooltip/assets/index.css";
 import { highlightInputElement } from "@/Utils/ValidateHelper";
 
 const authorizeService = new AuthorizeService();
 
 const ResetPasswordValidConfig: ValidateConfig<ResetPasswordDto> = {
     phone: [{ name: "Required", errMsg: "手机号必填" }, { name: "PhoneNo" }],
-    verifyCode: [{ name: "Required", errMsg: "验证码必填" }, { name: "RangeLength", params: [6, 6], errMsg: "验证码应为6位数" }]
+    verifyCode: [{ name: "Required", errMsg: "验证码必填" }, { name: "RangeLength", params: [6, 6], errMsg: "验证码应为6位数" }],
 };
 
 function UserResetPassword({ history }: RouteComponentProps) {
@@ -74,7 +61,7 @@ function UserResetPassword({ history }: RouteComponentProps) {
         <div>
             <p className="landing-title">找回密码</p>
             <div className="login-inner">
-                <Alert message={failError} type="error" visible={!!failError} onClose={() => setFailError(null)} showIcon={true} closable={true} />
+                <AlertTips message={failError} type="error" visible={!!failError} onClose={() => setFailError(null)} showIcon={true} closable={true} />
 
                 <Form validConfig={ResetPasswordValidConfig} onSubmit={submit} getFormMethods={(methods) => (formMethodsRef.current = methods)}>
                     <FormItem prop="phone" onValidate={onPhoneValidateChange}>
@@ -99,7 +86,7 @@ function UserResetPassword({ history }: RouteComponentProps) {
                         </FormSubmitButton>
                     </FormItem>
                 </Form>
-                <div className="landing-links">
+                <div className="landing-links fix">
                     <Link to={RedirectPath} className="fr">
                         已有账号，请登录 》
                     </Link>

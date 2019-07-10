@@ -18,20 +18,20 @@ export const UserRoutesConfig: RouteConfig[] = [
         path: RedirectPath,
         title: "用户登录",
         exact: true,
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/Login"))
+        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/Login")),
     },
     {
         path: ForgetPasswordtPath,
         title: "找回密码",
         exact: true,
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/ResetPassword"))
+        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/ResetPassword")),
     },
     {
         path: ForgetPasswordtResultPath,
         title: "找回密码完成",
         exact: true,
-        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/ResetPassword/Result"))
-    }
+        component: LoadComponent(() => import(/* webpackChunkName: "user" */ "@/Pages/User/ResetPassword/Result")),
+    },
 ];
 
 /**
@@ -43,18 +43,18 @@ export const RootRoutesConfig: RouteConfig[] = [
         title: "运营后台",
         component: SystemLayout,
         exact: true,
-        route: AuthorizedRoute
+        route: AuthorizedRoute,
     },
     {
         path: "/user",
         title: "用户管理",
         component: UserLayout,
-        routes: UserRoutesConfig
+        routes: UserRoutesConfig,
     },
     {
         path: "/",
         title: "运营后台",
         component: SystemLayout,
-        route: AuthorizedRoute
-    }
+        route: AuthorizedRoute,
+    },
 ];

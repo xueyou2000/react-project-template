@@ -96,11 +96,24 @@
         "utils-hooks": "^0.0.71",
         "xy-alert": "0.0.32",
         "xy-button": "^1.0.2",
-        "xy-form": "0.0.98",
+        "xy-card": "^0.0.3",
+        "xy-date-picker": "^0.0.31",
+        "xy-divider": "^0.0.5",
+        "xy-drawer": "^1.2.2",
+        "xy-form": "0.0.991",
         "xy-grid": "^0.0.6",
         "xy-input": "^0.0.91",
+        "xy-input-number": "0.1.2",
+        "xy-messagebox": "^0.0.9",
+        "xy-model": "^0.0.5",
         "xy-page-transition": "0.0.21",
+        "xy-pagination": "0.0.32",
+        "xy-select": "1.0.86",
         "xy-skeleton": "^0.0.5",
-        "xy-tooltip": "^0.1.4"
+        "xy-spin": "^0.0.3",
+        "xy-table": "0.0.23",
+        "xy-tabs": "1.0.8",
+        "xy-tooltip": "^0.1.4",
+        "xy-trigger": "^0.0.94"
     }
 }

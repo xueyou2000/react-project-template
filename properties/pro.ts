@@ -4,7 +4,7 @@ import packageInfo from "../package.json";
 
 const config: Configuration = {
     output: path.join(__dirname, "../dist"),
-    assetsPublicPath: "https://file.365wifi.com.cn/pro/gateway/",
+    assetsPublicPath: "/",
     filename: "js/[name].[contenthash:5].js",
     chunkFilename: "js/[name].[contenthash:5].js",
     devtool: false,

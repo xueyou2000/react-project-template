@@ -1,0 +1,139 @@
+@import "~@/Assets/Styles/themes.scss";
+
+.sider-menu-list {
+    padding: 16px 0px;
+    color: $--color-white-extra;
+    background: #001529;
+    font-size: 14px;
+    box-sizing: border-box;
+    user-select: none;
+}
+.menu-folder__title {
+    cursor: pointer;
+    position: relative;
+    line-height: 40px;
+    height: 40px;
+    padding-right: 34px;
+    padding-left: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.menu-folder__arrow {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 10px;
+    transition: all 0.3s;
+    transform: translateY(-2px);
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        vertical-align: baseline;
+        width: 6px;
+        height: 1.5px;
+        border-radius: 2px;
+        background: $--color-white-extra;
+        transition: 0.25s;
+    }
+
+    &:before {
+        transform: rotate(-45deg) translateX(2px);
+    }
+    &:after {
+        transform: rotate(45deg) translateX(-2px);
+    }
+}
+
+// 菜单文件夹
+.menu-folder {
+    transition: 0.3s;
+    color: $--color-white-extra;
+    overflow: hidden;
+
+    & > .sub-menu-list {
+        display: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: $--color-white;
+
+        .menu-folder__arrow:before,
+        .menu-folder__arrow:after {
+            transition: 0.25s;
+            background: $--color-white;
+        }
+    }
+}
+
+.menu-folder.open {
+    color: $--color-white;
+
+    & > .sub-menu-list {
+        display: block;
+    }
+
+    & > .menu-folder__title > .menu-folder__arrow {
+        &:before {
+            transition: 0.25s;
+            background: $--color-white;
+            transform: rotate(45deg) translateX(2px);
+        }
+        &:after {
+            transition: 0.25s;
+            background: $--color-white;
+            transform: rotate(-45deg) translateX(-2px);
+        }
+    }
+}
+
+.menu-folder > .sub-menu-list > .menu-folder > .menu-folder__title {
+    padding-left: 48px;
+}
+.menu-folder > .sub-menu-list > .menu-folder > .sub-menu-list > .menu-item {
+    padding-left: 72px;
+}
+
+
+// 菜单项
+.sider-menu-list > .menu-item,
+.sub-menu-list > .menu-item {
+    margin-top: 4px;
+    padding-left: 48px;
+    padding-right: 16px;
+    margin-bottom: 8px;
+    line-height: 40px;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    a {
+        display: block;
+        color: $--color-white-extra;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &:hover {
+        color: $--color-white;
+        a {
+            color: $--color-white;
+        }
+    }
+
+    &.selected {
+        color: $--color-white;
+        background: $--primary-color;
+        a {
+            color: $--color-white;
+        }
+    }
+}
+
+.sider-menu-list > .menu-item {
+    padding-left: 22px;
+}

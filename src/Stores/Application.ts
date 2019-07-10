@@ -5,6 +5,10 @@ import Authorization from "./Authorization";
 import Request, { RequestError } from "@/Libs/request";
 import Environment from "@/WebApplication/Environment";
 import H from "history";
+import PageManage from "./PageManage";
+import { flat } from '@/Utils';
+import ProjectRoutesConfig from '@/WebApplication/ProjectRoutesConfig';
+import DictService from '@/Services/DictService';
 
 export default class Application {
     private _breadcrumb: MatchedRoute<{}>[];
@@ -57,6 +61,15 @@ export default class Application {
             // 写入 token 头部
             diContext.request.setHeaders({ Authorization: token });
         });
+
+        // 注入字典服务
+        diContext.dictService = new DictService();
+
+        // 注入路由扁平配置
+        diContext.routeConfigs = flat(ProjectRoutesConfig, 'path', 'routes');
+
+        // 注入页面管理器
+        diContext.pageManage = new PageManage([]);
     }
 
     /**

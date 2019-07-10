@@ -4,23 +4,15 @@ import AuthorizeService from "@/Services/AuthorizeService";
 import { ForgetPasswordtPath } from "@/WebApplication/RoutesConfig";
 import React, { useState } from "react";
 import { Link, RouteComponentProps, withRouter } from "react-router-dom";
-import Alert from "xy-alert";
-import "xy-alert/assets/index.css";
-import { Button } from "xy-button";
-import "xy-button/assets/index.css";
-import { Form, FormItem, FormSubmitButton } from "xy-form";
-import "xy-form/assets/index.css";
-import { ValidateConfig } from "xy-form/es/ValidateUtils/ValidateInterface";
-import "xy-grid/assets/index.css";
-import { Input } from "xy-input";
-import "xy-input/assets/index.css";
+import { AlertTips, Button, Form, FormItem, FormSubmitButton, ValidateConfig, Input } from "@/Components/MyComponentTools";
+
 import "./index.scss";
 
 const authorizeService = new AuthorizeService();
 
 const LoginValidConfig: ValidateConfig<LoginDto> = {
     username: [{ name: "Required", errMsg: "账号必填" }, { name: "RangeLength", params: [5, 12] }],
-    password: [{ name: "Required", errMsg: "密码必填" }, { name: "RangeLength", params: [6, 18] }]
+    password: [{ name: "Required", errMsg: "密码必填" }, { name: "RangeLength", params: [6, 18] }],
 };
 
 function UserLogin({ history }: RouteComponentProps) {
@@ -41,7 +33,7 @@ function UserLogin({ history }: RouteComponentProps) {
         <div>
             <p className="landing-title">欢迎登录</p>
             <div className="login-inner">
-                <Alert message={failError} type="error" visible={!!failError} onClose={() => setFailError(null)} showIcon={true} closable={true} />
+                <AlertTips message={failError} type="error" visible={!!failError} onClose={() => setFailError(null)} showIcon={true} closable={true} />
 
                 <Form validConfig={LoginValidConfig} onSubmit={submit}>
                     <FormItem prop="username">
@@ -58,7 +50,7 @@ function UserLogin({ history }: RouteComponentProps) {
                         </FormSubmitButton>
                     </FormItem>
                 </Form>
-                <div className="landing-links">
+                <div className="landing-links fix">
                     <Link to={ForgetPasswordtPath} className="fr">
                         忘记密码?
                     </Link>

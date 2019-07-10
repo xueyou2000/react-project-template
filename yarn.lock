@@ -980,6 +980,11 @@
   dependencies:
     "@types/webpack" "*"
 
+"@types/classnames@^2.2.7":
+  version "2.2.9"
+  resolved "https://registry.npm.taobao.org/@types/classnames/download/@types/classnames-2.2.9.tgz#d868b6febb02666330410fe7f58f3c4b8258be7b"
+  integrity sha1-2Gi2/rsCZmMwQQ/n9Y88S4JYvns=
+
 "@types/classnames@^2.2.8":
   version "2.2.8"
   resolved "https://registry.npm.taobao.org/@types/classnames/download/@types/classnames-2.2.8.tgz#17139e1e1104203572caa4368f6796f6225b70b4"
@@ -5514,6 +5519,11 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
+lodash-es@^4.17.11:
+  version "4.17.13"
+  resolved "https://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.13.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash-es%2Fdownload%2Flodash-es-4.17.13.tgz#2a2df2acde25a8eebf886167f7d2b5d86a606db0"
+  integrity sha1-Ki3yrN4lqO6/iGFn99K12GpgbbA=
+
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -8827,6 +8837,11 @@ utils-dom@0.0.70:
   resolved "https://registry.npm.taobao.org/utils-dom/download/utils-dom-0.0.70.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Futils-dom%2Fdownload%2Futils-dom-0.0.70.tgz#0c2a8a9d3224baa9f008eccecc35645ed431ffd5"
   integrity sha1-DCqKnTIkuqnwCOzOzDVkXtQx/9U=
 
+utils-hooks@0.0.65:
+  version "0.0.65"
+  resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.65.tgz#abb9e24413ebee7ef3e563b1967e890ba4e077dc"
+  integrity sha1-q7niRBPr7n7z5WOxln6JC6Tgd9w=
+
 utils-hooks@0.0.66:
   version "0.0.66"
   resolved "https://registry.npm.taobao.org/utils-hooks/download/utils-hooks-0.0.66.tgz#94f31d8fd04256550c4e981c9a4e7cff6e8c3bec"
@@ -9284,7 +9299,7 @@ xy-autocomplete@0.0.91:
     xy-select "1.0.8"
     xy-trigger "0.0.94"
 
-xy-button@^1.0.2:
+xy-button@1.0.2, xy-button@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/xy-button/download/xy-button-1.0.2.tgz#292fd3b9784d0b81a4071e36a2e8626e7dbb8d6d"
   integrity sha1-KS/TuXhNC4GkBx42ouhibn27jW0=
@@ -9296,7 +9311,28 @@ xy-button@^1.0.2:
     react "^16.8.2"
     react-dom "^16.8.2"
 
-xy-date-picker@0.0.31:
+xy-card@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npm.taobao.org/xy-card/download/xy-card-0.0.3.tgz#2515b311cffbb22cd5bac4748257189b50c58ee6"
+  integrity sha1-JRWzEc/7sizVusR0glcYm1DFjuY=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    xy-skeleton "0.0.5"
+
+xy-checkbox@^1.2.31:
+  version "1.2.31"
+  resolved "https://registry.npm.taobao.org/xy-checkbox/download/xy-checkbox-1.2.31.tgz#5582df20dfb40da95cfeb77b9e2b6cd472c70a2a"
+  integrity sha1-VYLfIN+0Dalc/rd7nits1HLHCio=
+  dependencies:
+    "@types/classnames" "^2.2.7"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.65"
+
+xy-date-picker@0.0.31, xy-date-picker@^0.0.31:
   version "0.0.31"
   resolved "https://registry.npm.taobao.org/xy-date-picker/download/xy-date-picker-0.0.31.tgz#cbd3693329e241cee32c3b4f5ad894b265a07c5a"
   integrity sha1-y9NpMyniQc7jLDtPWtiUsmWgfFo=
@@ -9313,7 +9349,26 @@ xy-date-picker@0.0.31:
     xy-time-picker "^0.0.4"
     xy-trigger "0.0.94"
 
-xy-empty@0.0.8:
+xy-divider@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/xy-divider/download/xy-divider-0.0.5.tgz#4065315f7e1da21cd4242f912582ac5ba41cf038"
+  integrity sha1-QGUxX34dohzUJC+RJYKsW6Qc8Dg=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+
+xy-drawer@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npm.taobao.org/xy-drawer/download/xy-drawer-1.2.2.tgz#fc727e918de24ba2b9a95bd0a958f5dc3e01a475"
+  integrity sha1-/HJ+kY3iS6K5qVvQqVj13D4BpHU=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.69"
+
+xy-empty@0.0.8, xy-empty@^0.0.8:
   version "0.0.8"
   resolved "https://registry.npm.taobao.org/xy-empty/download/xy-empty-0.0.8.tgz#605662136cee758f34402d7d0d6f936ef1c0b9e0"
   integrity sha1-YFZiE2zudY80QC19DW+TbvHAueA=
@@ -9322,12 +9377,13 @@ xy-empty@0.0.8:
     react "^16.8.2"
     react-dom "^16.8.2"
 
-xy-form@0.0.98:
-  version "0.0.98"
-  resolved "https://registry.npm.taobao.org/xy-form/download/xy-form-0.0.98.tgz#babbbdd2caf26a89781f6fe1c990f103ac60f333"
-  integrity sha1-uru90sryaol4H2/hyZDxA6xg8zM=
+xy-form@0.0.991:
+  version "0.0.991"
+  resolved "https://registry.npm.taobao.org/xy-form/download/xy-form-0.0.991.tgz#956c7ab5848dfd7a65d51ffd42da721b7c30e7ff"
+  integrity sha1-lWx6tYSN/Xpl1R/9QtpyG3ww5/8=
   dependencies:
     classnames "^2.2.6"
+    lodash "^4.17.11"
     react "^16.8.2"
     react-dom "^16.8.2"
     utils-hooks "0.0.71"
@@ -9348,6 +9404,19 @@ xy-grid@0.0.6, xy-grid@^0.0.6:
     react-dom "^16.8.2"
     utils-hooks "0.0.69"
 
+xy-input-number@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npm.taobao.org/xy-input-number/download/xy-input-number-0.1.2.tgz#4740570a987c2ad4865f5579ca0a2ba09648cb0b"
+  integrity sha1-R0BXCph8KtSGX1V5ygoroJZIyws=
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.17"
+    "@fortawesome/free-solid-svg-icons" "^5.8.1"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.69"
+
 xy-input@0.0.91, xy-input@^0.0.91:
   version "0.0.91"
   resolved "https://registry.npm.taobao.org/xy-input/download/xy-input-0.0.91.tgz#1db4db3020c34ec806c54829528326b9e362e31b"
@@ -9361,6 +9430,31 @@ xy-input@0.0.91, xy-input@^0.0.91:
     react-dom "^16.8.2"
     utils-hooks "0.0.69"
 
+xy-messagebox@0.0.9, xy-messagebox@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.npm.taobao.org/xy-messagebox/download/xy-messagebox-0.0.9.tgz#595fa1517d3780404350d81f1ca179e8a5a6c0dc"
+  integrity sha1-WV+hUX03gEBDUNgfHKF56KWmwNw=
+  dependencies:
+    "@fortawesome/fontawesome-svg-core" "^1.2.17"
+    "@fortawesome/free-solid-svg-icons" "^5.8.1"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.69"
+    xy-button "1.0.2"
+
+xy-model@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npm.taobao.org/xy-model/download/xy-model-0.0.5.tgz#cfbec4e73b9c7432088cb2b1950579fd378f2ebc"
+  integrity sha1-z77E5zucdDIIjLKxlQV5/TePLrw=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.69"
+    xy-messagebox "0.0.9"
+
 xy-page-transition@0.0.21:
   version "0.0.21"
   resolved "https://registry.npm.taobao.org/xy-page-transition/download/xy-page-transition-0.0.21.tgz#9f20dabe57e2f6f71c72a0de6b6bdbf04419fae5"
@@ -9369,6 +9463,20 @@ xy-page-transition@0.0.21:
     classnames "^2.2.6"
     react "^16.8.2"
     react-dom "^16.8.2"
+
+xy-pagination@0.0.32:
+  version "0.0.32"
+  resolved "https://registry.npm.taobao.org/xy-pagination/download/xy-pagination-0.0.32.tgz#eaeb7e6b8d21416f7802915ca1b3ddb26a5f7515"
+  integrity sha1-6ut+a40hQW94ApFcobPdsmpfdRU=
+  dependencies:
+    "@fortawesome/free-solid-svg-icons" "^5.8.2"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    lodash-es "^4.17.11"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "^0.0.71"
+    xy-select "^1.0.82"
 
 xy-select@1.0.8:
   version "1.0.8"
@@ -9385,7 +9493,22 @@ xy-select@1.0.8:
     xy-empty "0.0.8"
     xy-trigger "0.0.94"
 
-xy-skeleton@^0.0.5:
+xy-select@1.0.86, xy-select@^1.0.82:
+  version "1.0.86"
+  resolved "https://registry.npm.taobao.org/xy-select/download/xy-select-1.0.86.tgz#1456709c3078434a502fefb9f23c134e25123b47"
+  integrity sha1-FFZwnDB4Q0pQL++58jwTTiUSO0c=
+  dependencies:
+    "@fortawesome/free-solid-svg-icons" "5.8.1"
+    "@fortawesome/react-fontawesome" "^0.1.4"
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-dom "0.0.66"
+    utils-hooks "0.0.71"
+    xy-empty "0.0.8"
+    xy-trigger "0.0.94"
+
+xy-skeleton@0.0.5, xy-skeleton@^0.0.5:
   version "0.0.5"
   resolved "https://registry.npm.taobao.org/xy-skeleton/download/xy-skeleton-0.0.5.tgz#742f0419c9c55debb2a8dee005223b132da2b1f8"
   integrity sha1-dC8EGcnFXeuyqN7gBSI7Ey2isfg=
@@ -9394,6 +9517,39 @@ xy-skeleton@^0.0.5:
     react "^16.8.2"
     react-dom "^16.8.2"
     xy-grid "0.0.6"
+
+xy-spin@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npm.taobao.org/xy-spin/download/xy-spin-0.0.3.tgz#710888fab7334fcc48ac3c9004803e3cf5f17002"
+  integrity sha1-cQiI+rczT8xIrDyQBIA+PPXxcAI=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+
+xy-table@0.0.23:
+  version "0.0.23"
+  resolved "https://registry.npm.taobao.org/xy-table/download/xy-table-0.0.23.tgz#fbb51dc2a2ee528f4fed4cbb0aac38da2a791372"
+  integrity sha1-+7UdwqLuUo9P7Uy7Cqw42ip5E3I=
+  dependencies:
+    classnames "^2.2.6"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "^0.0.71"
+    xy-checkbox "^1.2.31"
+    xy-empty "^0.0.8"
+
+xy-tabs@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.taobao.org/xy-tabs/download/xy-tabs-1.0.8.tgz#86c9b8465357a7659beca61e191d72d81de75add"
+  integrity sha1-hsm4RlNXp2Wb7KYeGR1y2B3nWt0=
+  dependencies:
+    "@types/classnames" "^2.2.7"
+    classnames "^2.2.6"
+    lodash-es "^4.17.11"
+    react "^16.8.2"
+    react-dom "^16.8.2"
+    utils-hooks "0.0.71"
 
 xy-time-picker@0.0.62:
   version "0.0.62"
@@ -9453,7 +9609,7 @@ xy-tooltip@^0.1.4:
     utils-hooks "0.0.71"
     xy-trigger "0.0.94"
 
-xy-trigger@0.0.94:
+xy-trigger@0.0.94, xy-trigger@^0.0.94:
   version "0.0.94"
   resolved "https://registry.npm.taobao.org/xy-trigger/download/xy-trigger-0.0.94.tgz#e4f8adcc5b8f727433fcff8839a52986ec7ecf23"
   integrity sha1-5PitzFuPcnQz/P+IOaUphux+zyM=

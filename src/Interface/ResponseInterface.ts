@@ -53,7 +53,7 @@ export interface ResponseGeneric<T = any> {
 /**
  * 分页查询结构
  */
-export interface IResponsePage<T = any> {
+export interface ResponsePage<T = any> {
     /**
      * 当前页码
      */
@@ -70,4 +70,12 @@ export interface IResponsePage<T = any> {
      * 查询数据
      */
     list: T[];
+    /**
+     * 是否有上一页
+     */
+    hasPreviousPage?: boolean;
+    /**
+     * 是否有下一页
+     */
+    hasNextPage?: boolean;
 }
